@@ -28,7 +28,7 @@ class ReverseDisplay(Display):
 
 class Print(ABC):
     @abstractmethod
-    def do_print(self, book: Book) -> str:
+    def do_print(self, book: Book) -> None:
         ...
 
 
