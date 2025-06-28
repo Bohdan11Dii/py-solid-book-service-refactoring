@@ -29,7 +29,7 @@ class ReverseDisplay(Display):
 class Print(ABC):
     @abstractmethod
     def do_print(self, book: Book) -> None:
-        ...
+        pass
 
 
 class ConsolePrint(Print):
@@ -47,7 +47,7 @@ class ReversePrint(Print):
 class Serializer(ABC):
     @abstractmethod
     def serialize(self, book: Book) -> str:
-        ...
+        pass
 
 
 class JsonSerializer(Serializer):
